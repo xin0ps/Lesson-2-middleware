@@ -1,0 +1,22 @@
+1. Chain of Responsibility
+Chain of Responsibility (CoR) bir davranış dizayn nümunəsidir ki, tələbləri obyektlər zənciri boyunca ötürərək emal etməyə imkan verir. Hər obyekt tələbi ya emal edir, ya da növbəti obyektə ötürür. ASP.NET Core-da bu dizayn nümunəsi middleware-lərdə təbii olaraq tətbiq olunur.
+
+2. Middleware
+ASP.NET Core-da middleware tələbi və cavabı emal edən komponentlər zənciridir. Middleware-lər Configure metodunda konfiqurasiya edilir və tələbin emal zəncirinə daxil edilir. Hər bir middleware ya tələbi emal edir, ya da növbəti middleware-ə ötürür.
+
+3. MVC (Model-View-Controller)
+MVC arxitektura nümunəsi tətbiqlərin üç əsas komponentə ayrılmasını təmin edir: Model, View və Controller.
+
+Model: Tətbiqin məlumatlarını və iş loqikasını idarə edir.
+View: İstifadəçi interfeysi və məlumatların göstərilməsi ilə məşğul olur.
+Controller: Tələbləri emal edir və model və view-i yeniləyir.
+4. Razor Pages
+Razor Pages, ASP.NET Core-da tələbləri emal etmək üçün sadələşdirilmiş bir modeldir. MVC arxitekturasından fərqli olaraq, Razor Pages əsasən hər səhifə üçün bir model və view təqdim edir. Bu, kodu daha sadə və daha az parçalanmış edir.
+
+Razor Pages layihəsində bir səhifə Pages qovluğunda bir .cshtml faylı olaraq saxlanır və bu səhifənin PageModel sinifi olur.
+
+5. Controllerdən Razor Page-ə Data Göndərmə Üsulları
+MVC tətbiqində kontrollerdən Razor Page-ə məlumat göndərməyin bir neçə yolu var: 3
+TempData 
+ViewData
+Model
